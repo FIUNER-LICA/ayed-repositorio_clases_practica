@@ -26,11 +26,11 @@ class Cuadrado:
 
     def area(self):
         # Calcula y devuelve el área del cuadrado (lado^2).
-        return self.lado ** 2
+        return self.__lado ** 2
 
     def perimetro(self):
         # Calcula y devuelve el perímetro del cuadrado (4 * lado).
-        return 4 * self.lado
+        return 4 * self.__lado
     
 cuadrado1 = Cuadrado(5) # crea un cuadrado de lado 5
 area = cuadrado1.area()  # area = lado al cuadrado
@@ -57,17 +57,17 @@ cuadrado1.lado = -5 # lanza una excepción
 
 # if __name__ == "__main__":
 
-    # cuadrado1 = Cuadrado(5) # crea un cuadrado de lado 5
-    # area = cuadrado1.area()  # lado al cuadrado
-    # print(area)
-    # perimetro = cuadrado1.perimetro() # lado * 4
-    # print(perimetro)
-    # cuadrado1.lado = 10 # cambia el lado a 10 usando el setter
-    # largo_lado = cuadrado1.lado # muestra el largo del lado usando el getter
-    # print(largo_lado)
-    # area = cuadrado1.area() # lado al cuadrado
-    # print(area)
-    # perimetro = cuadrado1.perimetro() # lado * 4
-    # print(perimetro)
-    # cuadrado1.lado = -5 # lanza una excepción
-    # # cuadrado2 = Cuadrado(-5) # lanza una excepción
+#     cuadrado1 = Cuadrado(5) # crea un cuadrado de lado 5
+#     area = cuadrado1.area()  # lado al cuadrado
+#     print(area)
+#     perimetro = cuadrado1.perimetro() # lado * 4
+#     print(perimetro)
+#     cuadrado1.lado = 10 # cambia el lado a 10 usando el setter
+#     largo_lado = cuadrado1.lado # muestra el largo del lado usando el getter
+#     print(largo_lado)
+#     area = cuadrado1.area() # lado al cuadrado
+#     print(area)
+#     perimetro = cuadrado1.perimetro() # lado * 4
+#     print(perimetro)
+#     cuadrado1.lado = -5 # lanza una excepción
+#     # cuadrado2 = Cuadrado(-5) # lanza una excepción

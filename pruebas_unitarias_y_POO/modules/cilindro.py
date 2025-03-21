@@ -28,8 +28,8 @@ class Cilindro:
         self.__altura = nueva_altura
     
     def volumen(self):
-        return math.pi * (self.radio ** 2) * self.altura
+        return math.pi * (self.__radio ** 2) * self.__altura
     
     def area_superficial(self):
-        area = 2 * math.pi * self.radio * (self.radio + self.altura)
+        area = 2 * math.pi * self.__radio * (self.__radio + self.__altura)
         return area

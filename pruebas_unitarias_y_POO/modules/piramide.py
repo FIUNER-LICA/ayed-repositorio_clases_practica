@@ -124,8 +124,8 @@ class Piramide:
 #         self.__altura = nueva_altura
     
 #     def volumen(self):
-#         return (self.base_longitud ** 2 * self.altura) / 3
+#         return (self.__base_longitud ** 2 * self.__altura) / 3
     
 #     def area_superficial(self):
-#         area = self.base_longitud * (self.base_longitud + math.sqrt(4*self.altura**2 + (self.base_longitud/2)**2))
+#         area = self.__base_longitud * (self.__base_longitud + math.sqrt(4*self.__altura**2 + (self.__base_longitud/2)**2))
 #         return area
