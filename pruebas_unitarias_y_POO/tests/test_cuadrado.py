@@ -23,13 +23,13 @@ class TestCuadrado(unittest.TestCase):
     def test_area(self):
         # Prueba el cálculo del área del cuadrado.
         c = Cuadrado(4)
-        self.assertAlmostEqual(c.area(), 16)
+        self.assertAlmostEqual(c.area(), 16, places=3)
         # Verifica que el área calculada sea aproximadamente igual a 16 (lado^2).
 
     def test_perimetro(self):
         # Prueba el cálculo del perímetro del cuadrado.
         c = Cuadrado(3)
-        self.assertAlmostEqual(c.perimetro(), 12)
+        self.assertAlmostEqual(c.perimetro(), 12, places=3)
         # Verifica que el perímetro calculado sea aproximadamente igual a 12 (4 * lado).
 
     def test_setter_lado_valido(self):

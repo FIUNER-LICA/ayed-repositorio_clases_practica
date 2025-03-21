@@ -44,7 +44,7 @@ area = cuadrado1.area() # lado al cuadrado
 print(area)
 perimetro = cuadrado1.perimetro() # lado * 4
 print(perimetro)
-cuadrado1.lado = -5 # lanza una excepción
+# cuadrado1.lado = -5 # lanza una excepción
 # cuadrado2 = Cuadrado(-5) # lanza una excepción
 
 
