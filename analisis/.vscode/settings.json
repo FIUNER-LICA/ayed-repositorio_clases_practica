@@ -3,5 +3,9 @@
     "terminal.integrated.env.windows": {
         "PYTHONPATH": "${workspaceFolder};${env:PYTHONPATH}",
         "PATH": "${workspaceFolder};${env:PATH}"
-    }
+    },
+    "editor.fontSize": 22,
+    "editor.fontWeight":"normal",
+    "terminal.integrated.fontSize": 22,
+    "window.zoomLevel": 0,
 }
