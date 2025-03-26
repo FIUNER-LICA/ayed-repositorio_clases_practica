@@ -1,44 +1,30 @@
-# 🐍Análisis de algoritmos 
+# 📑 Análisis de Complejidad O(n)
 
-Breve descripción del proyecto:
+Este notebook contiene ejemplos y explicaciones relacionadas con **analisis de algoritmos**. Se analiza cómo descartar constantes, términos no dominantes y se presentan ejemplos prácticos para entender el comportamiento de algoritmos lineales, cuadráticos y logaritmicos, con sus gráficas.
 
-Ejemplo: “Este es un script en el que se comparan algoritmos de ordenamiento. Permite [describir funcionalidades principales].
+## Contenido
 
----
-## 🏗Arquitectura General
+1. **Complejidad O(1):**  
+   Ejemplo de operaciones constantes que no dependen del tamaño de la entrada.
 
-Explica brevemente cómo está organizado el código (funciones y/o clases)
+2. **Complejidad O(n):**  
+   Algoritmos lineales donde el tiempo de ejecución crece proporcionalmente al tamaño de la entrada.
 
-Las gráficas de los resultados están disponible en la carpeta [data](./data) del proyecto.
+3. **Complejidad O(n²):**  
+   Algoritmos cuadráticos con bucles anidados, donde el tiempo de ejecución crece exponencialmente con el tamaño de la entrada.
 
-El informe completo está disponible en la carpeta [docs](./docs) del proyecto.
+4. **Complejidad O(log n):**  
+   Algoritmos logarítmicos que reducen el tamaño del problema en cada iteración.
 
----
-## 📑Dependencias
+5. **Complejidad O(n log n):**  
+   Algoritmos eficientes como los de ordenamiento que combinan procesos lineales y logarítmicos.
 
-1. **Python 3.x**
-2. **matplotlib** (`pip install matplotlib`)
-3. listar dependencias principales
-4. Dependencias listadas en requierements.txt
+6. **Gráficas:**  
+   Visualización del comportamiento de los algoritmos para diferentes tamaños de entrada.
 
----
-## 🚀Cómo Ejecutar el Proyecto
-1. **Clonar o descargar** el repositorio.
+## Dependencias
 
-2. **Crear y activar** un entorno virtual.
+Para ejecutar este notebook, se necesita de tener instalados los siguientes módulos:
 
-3. **Instalar las dependencias**:
-   ```bash
-   pip install -r requirements.txt
-   ```
-   El archivo `requirements.txt` se encuentran en la carpeta [deps](./deps) del proyecto.
-
----
-## 🙎‍♀️🙎‍♂️Autores
-
-- Apellido y Nombre del primer integrante
-- Apellido y Nombre del primer integrante
-
----
-
-> **Consejo**: Mantén el README **actualizado** conforme evoluciona el proyecto, y elimina (o añade) secciones según necesites. Esta plantilla es sólo un punto de partida general.
+- Python 3.x
+- Jupyter Notebook o VS Code con la extensión de Jupyter
