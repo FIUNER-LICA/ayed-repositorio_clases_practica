@@ -27,4 +27,4 @@ Este notebook contiene ejemplos y explicaciones relacionadas con **analisis de a
 Para ejecutar este notebook, se necesita de tener instalados los siguientes módulos:
 
 - Python 3.x
-- Jupyter Notebook o VS Code con la extensión de Jupyter
+- extensión: Jupyter
