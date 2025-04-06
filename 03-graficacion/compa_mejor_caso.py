@@ -9,9 +9,7 @@ def medir_tiempos(metodo_ord, tamanos, caso):
     tiempos = []
     for n in tamanos:
         if caso == "mejor":
-            lista = list(range(n-1))  # Lista ordenada
-            if n > 0:
-                lista.append(randint(-1000, 1000))  # Agregar un número aleatorio al final
+            lista = list(range(n))  # Lista ordenada
         elif caso == "promedio":
             lista = [randint(-1000, 1000) for _ in range(n)]  # Caso promedio: lista aleatoria
         elif caso == "peor":
