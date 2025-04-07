@@ -8,8 +8,6 @@ from modules.ordenamiento_shell import ordenamiento_shell
 tamanos = [1, 10, 100, 200, 500, 700, 1000]
 
 tiempos_ordenamiento_por_seleccion = []
-tiempos_ordenamiento_burbuja_corto = []
-tiempos_ordenamiento_shell = []
 
 # figsize es el tamaño de la figura en pulgadas (width, height)
 plt.figure(figsize=(10, 6))
@@ -24,7 +22,6 @@ for n in tamanos:
     ordenamiento_por_seleccion(datos.copy())
     fin = time.perf_counter()
     tiempos_ordenamiento_por_seleccion.append(fin - inicio)        
-    print(f"Tiempo de ordenamiento por seleccion para n={n}: {fin - inicio:.6f} segundos")
 
 plt.plot(tamanos, tiempos_ordenamiento_por_seleccion, marker='o', label="ordenamiento_por_seleccion")
 
