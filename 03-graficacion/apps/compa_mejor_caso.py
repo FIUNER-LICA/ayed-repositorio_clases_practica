@@ -1,5 +1,6 @@
 from modules.ordenamiento_por_seleccion import ordenamiento_por_seleccion
 from modules.ordenamiento_burbuja import ordenamiento_burbuja_corto
+from modules.ordenamiento_burbuja import ordenamiento_burbuja
 from modules.ordenamiento_shell import ordenamiento_shell
 import time
 import matplotlib.pyplot as plt
@@ -26,6 +27,7 @@ def graficar_casos():
     metodos = [
         ordenamiento_por_seleccion,
         ordenamiento_burbuja_corto,
+        ordenamiento_burbuja,
         ordenamiento_shell
     ]
 
