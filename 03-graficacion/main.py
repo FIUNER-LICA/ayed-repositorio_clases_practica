@@ -2,8 +2,6 @@ from matplotlib import pyplot as plt
 from random import randint
 import time
 from modules.ordenamiento_por_seleccion import ordenamiento_por_seleccion
-from modules.ordenamiento_burbuja import ordenamiento_burbuja_corto
-from modules.ordenamiento_shell import ordenamiento_shell
 
 tamanos = [1, 10, 100, 200, 500, 700, 1000]
 
@@ -23,7 +21,8 @@ for n in tamanos:
     fin = time.perf_counter()
     tiempos_ordenamiento_por_seleccion.append(fin - inicio)        
 
-plt.plot(tamanos, tiempos_ordenamiento_por_seleccion, marker='o', label="ordenamiento_por_seleccion")
+# plt.plot(tamanos, tiempos_ordenamiento_por_seleccion, marker='o', label="ordenamiento_por_seleccion")
+plt.plot(tamanos, tiempos_ordenamiento_por_seleccion)
 
 plt.xlabel('Tamaño de la lista')
 plt.ylabel('Tiempo (segundos)')
