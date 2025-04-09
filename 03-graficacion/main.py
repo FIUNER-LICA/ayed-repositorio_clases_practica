@@ -11,10 +11,11 @@ tiempos_ordenamiento_por_seleccion = []
 plt.figure(figsize=(10, 6))
 
 for n in tamanos:
+
+    datos = [randint(1, 10000) for _ in range(n)]
     # datos = []
     # for _ in range(n):
-    #     datos.append(randint(1, 10000))
-    datos = [randint(1, 10000) for _ in range(n)]
+    #     datos.append(randint(1, 10000))    
 
     inicio = time.perf_counter()
     ordenamiento_por_seleccion(datos.copy())

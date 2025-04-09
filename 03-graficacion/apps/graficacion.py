@@ -1,6 +1,6 @@
 from modules.graficar import graficar_tiempos
 from modules.ordenamiento_por_seleccion import ordenamiento_por_seleccion
-from modules.ordenamiento_burbuja import ordenamiento_burbuja_corto
+from modules.ordenamiento_burbuja import ordenamiento_burbuja
 from modules.ordenamiento_shell import ordenamiento_shell
 
 lista_metodos_ord = [ordenamiento_por_seleccion]
