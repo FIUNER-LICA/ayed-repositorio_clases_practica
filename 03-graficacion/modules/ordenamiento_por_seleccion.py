@@ -1,5 +1,6 @@
 
 from random import randint
+import time
 
 # esta version coloca el elemento más grande en su lugar correcto (al final de la lista)
 def ordenamiento_por_seleccion(una_lista):
@@ -23,38 +24,36 @@ if __name__ == '__main__':
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     # M, N = 5000, 8000    
-    # datos = []
-    # for _ in range(N):
-    #     datos.append(randint(-M, M))
-    # # datos = [randint(-M, M) for _ in range(N)]
-    
-    # datos_ordenados = sorted(datos)
-    # datos = ordenamiento_por_seleccion(datos)
+    # datos = [randint(-M, M) for _ in range(N)]
+    # # datos = []
+    # # for _ in range(N):
+    # #     datos.append(randint(-M, M))    
 
-    # assert datos == datos_ordenados
+    # datos_sel = ordenamiento_por_seleccion(datos.copy())
+    # # print(datos)
+
+
+
+    # datos_sorted = sorted(datos)
+
+
+
+
+    # if datos_sel == datos_sorted:
+    #     print("La lista está ordenada")
+    # else:
+    #     print("La lista no está ordenada")
+
+
+
+    # assert datos_sel == datos_sorted
+
+
+    # # Medicion de tiempo
+    # inicio = time.time()
+    # ordenamiento_por_seleccion(datos.copy())
+    # fin = time.time()
+    # print(f"Tiempo de ejecución: {fin - inicio:.6f} segundos")
 
 

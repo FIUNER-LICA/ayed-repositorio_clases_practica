@@ -4,6 +4,7 @@ import time
 from modules.ordenamiento_por_seleccion import ordenamiento_por_seleccion
 
 tamanos = [1, 10, 100, 200, 500, 700, 1000]
+tamanos = range(1,1000,10)
 
 tiempos_ordenamiento_por_seleccion = []
 
@@ -20,6 +21,7 @@ for n in tamanos:
     inicio = time.perf_counter()
     ordenamiento_por_seleccion(datos.copy())
     fin = time.perf_counter()
+    
     tiempos_ordenamiento_por_seleccion.append(fin - inicio)        
 
 # plt.plot(tamanos, tiempos_ordenamiento_por_seleccion, marker='o', label="ordenamiento_por_seleccion")

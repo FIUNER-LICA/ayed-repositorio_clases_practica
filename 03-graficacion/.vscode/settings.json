@@ -4,8 +4,8 @@
         "PYTHONPATH": "${workspaceFolder};${env:PYTHONPATH}",
         "PATH": "${workspaceFolder};${env:PATH}"
     },
-    "editor.fontSize": 14,
+    "editor.fontSize": 20,
     "editor.fontWeight":"normal",
-    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.fontSize": 20,
     "window.zoomLevel": 0,
 }
