@@ -18,27 +18,18 @@ def ordenamiento_por_seleccion(una_lista):
 
 if __name__ == '__main__':
     mi_lista = [5, 3, 8, 6, 2, 7, 4, 1] 
-    print(ordenamiento_por_seleccion(mi_lista))
+    # print(ordenamiento_por_seleccion(mi_lista))
 
-
-
-
-
-    # M, N = 5000, 8000    
-    # datos = [randint(-M, M) for _ in range(N)]
+    M, N = 5000, 8000    
+    datos = [randint(-M, M) for _ in range(N)]
     # # datos = []
     # # for _ in range(N):
     # #     datos.append(randint(-M, M))    
 
-    # datos_sel = ordenamiento_por_seleccion(datos.copy())
-    # # print(datos)
+    datos_sel = ordenamiento_por_seleccion(datos.copy())
+    # print(datos)
 
-
-
-    # datos_sorted = sorted(datos)
-
-
-
+    datos_sorted = sorted(datos)
 
     # if datos_sel == datos_sorted:
     #     print("La lista está ordenada")
@@ -47,13 +38,10 @@ if __name__ == '__main__':
 
 
 
-    # assert datos_sel == datos_sorted
-
-
     # # Medicion de tiempo
-    # inicio = time.time()
-    # ordenamiento_por_seleccion(datos.copy())
-    # fin = time.time()
-    # print(f"Tiempo de ejecución: {fin - inicio:.6f} segundos")
+    inicio = time.time()
+    ordenamiento_por_seleccion(datos.copy())
+    fin = time.time()
+    print(f"Tiempo de ejecución: {fin - inicio:.6f} segundos")
 
 
