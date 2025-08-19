@@ -1,4 +1,4 @@
-# 📑 Análisis de Complejidad O(n)
+# 📑 Análisis de Complejidad
 
 Este notebook contiene ejemplos y explicaciones relacionadas con **analisis de algoritmos**. Se analiza cómo descartar constantes, términos no dominantes y se presentan ejemplos prácticos para entender el comportamiento de algoritmos lineales, cuadráticos y logaritmicos, con sus gráficas.
 
