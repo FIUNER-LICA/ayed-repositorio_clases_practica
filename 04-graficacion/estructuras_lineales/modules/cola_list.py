@@ -1,4 +1,4 @@
-class Cola:
+class Cola_list:
     def __init__(self):
         self.items = []
 
@@ -15,10 +15,10 @@ class Cola:
         return len(self.items)
     
 if __name__ == "__main__":
-    cola = Cola()
+    cola_list = Cola_list()
 
-    cola.agregar(5)
-    cola.agregar(10)
-    cola.agregar(15)
+    cola_list.agregar(5)
+    cola_list.agregar(10)
+    cola_list.agregar(15)
 
-    print(cola.items)
+    print(cola_list.items)
