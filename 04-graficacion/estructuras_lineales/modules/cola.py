@@ -19,65 +19,44 @@ class Nodo:
         
 class Cola:
     def __init__(self):
-        # para mejorar un poco el rendimieto, hacer publicos estos atributos
-        self.__primero = None
-        self.__ultimo = None
-        self.__tamano = 0
-
-    @property
-    def primero(self):
-        return self.__primero
-    
-    @primero.setter
-    def primero(self, nuevo_frente):
-        self.__primero = nuevo_frente
-    
-    @property
-    def ultimo(self):
-        return self.__ultimo
-    
-    @ultimo.setter
-    def ultimo(self, nuevo_final):
-        self.__ultimo = nuevo_final
-
-    @property 
-    def tamano(self):
-        return self.__tamano
+        self.primero = None
+        self.ultimo = None
+        self.tamano = 0
     
     def esta_vacia(self):
-        return self.__primero is None
+        return self.primero is None
     
     def insertar(self, valor):
         nuevo_nodo = Nodo(valor)
         
         if self.esta_vacia():
-            self.__primero = nuevo_nodo
-            self.__ultimo = nuevo_nodo
+            self.primero = nuevo_nodo
+            self.ultimo = nuevo_nodo
         else:
-            self.__ultimo.siguiente = nuevo_nodo
-            self.__ultimo = nuevo_nodo
+            self.ultimo.siguiente = nuevo_nodo
+            self.ultimo = nuevo_nodo
         
-        self.__tamano += 1
+        self.tamano += 1
     
     def eliminar(self):
         if self.esta_vacia():
             raise ValueError("La cola está vacía")
         
-        valor_eliminado = self.__primero
-        self.__primero = self.__primero.siguiente
+        valor_eliminado = self.primero
+        self.primero = self.primero.siguiente
         
         # Si al eliminar, la cola queda vacía
-        if self.__primero is None:
-            self.__ultimo = None
+        if self.primero is None:
+            self.ultimo = None
         
-        self.__tamano -= 1
+        self.tamano -= 1
         return valor_eliminado
     
     def obtener_primero(self):
         if self.esta_vacia():
             raise ValueError("La cola está vacía")
         
-        return self.__primero.dato
+        return self.primero.dato
     
     def obtener_ultimo(self):
         if self.esta_vacia():
@@ -90,7 +69,7 @@ class Cola:
             return "Cola vacía"
         
         elementos = []
-        actual = self.__primero
+        actual = self.primero
         while actual is not None:
             elementos.append(f'{actual.dato}')
             actual = actual.siguiente
