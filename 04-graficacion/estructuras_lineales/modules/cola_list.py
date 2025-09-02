@@ -8,10 +8,10 @@ class Cola_list:
         return self.items == []
 
     def agregar(self, item):
-        self.items.insert(0,item)
+        self.items.append(item)
 
     def avanzar(self):
-        return self.items.pop()
+        return self.items.pop(0)
 
     def tamano(self):
         return len(self.items)
