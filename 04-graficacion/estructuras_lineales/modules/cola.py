@@ -44,11 +44,9 @@ class Cola:
     def tamano(self):
         return self.__tamano
     
-    # orden de complejidad O(1)
     def esta_vacia(self):
         return self.__primero is None
     
-    # orden de complejidad O(1)
     def insertar(self, valor):
         nuevo_nodo = Nodo(valor)
         
@@ -61,7 +59,6 @@ class Cola:
         
         self.__tamano += 1
     
-    # orden de complejidad O(1)
     def eliminar(self):
         if self.esta_vacia():
             raise ValueError("La cola está vacía")
@@ -76,14 +73,12 @@ class Cola:
         self.__tamano -= 1
         return valor_eliminado
     
-    #orden de complejidad O(1)
     def obtener_primero(self):
         if self.esta_vacia():
             raise ValueError("La cola está vacía")
         
         return self.__primero.dato
     
-    #orden de complejidad O(1)
     def obtener_ultimo(self):
         if self.esta_vacia():
             raise ValueError("La cola está vacía")
