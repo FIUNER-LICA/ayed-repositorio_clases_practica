@@ -1,3 +1,5 @@
+# cola implementada con lista de python
+
 class Cola_list:
     def __init__(self):
         self.items = []

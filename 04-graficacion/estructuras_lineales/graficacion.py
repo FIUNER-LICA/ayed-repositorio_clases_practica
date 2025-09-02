@@ -1,4 +1,4 @@
-from matplotlib import pyplot as plt
+from matplotlib import pyplot as plt # pip install matplotlib
 from random import randint
 import time
 from modules.cola import Cola
@@ -11,31 +11,28 @@ tiempos_agregar_cola_list = []
 tiempos_remover_cola = []
 tiempos_remover_cola_list = []
 
-plt.figure(figsize=(10, 6))
-
 for n in tamanos:
     cola = Cola()
     cola_list = Cola_list()
     
     # Medir tiempo para agregar Cola    
-    for _ in range(n):
-        contador = 0
+    inicio = time.perf_counter()
+    for _ in range(n):        
         inicio = time.perf_counter()
         dato = randint(1, 100)
         cola.insertar(dato)
-        fin = time.perf_counter()
-        contador += (fin - inicio)
-    tiempos_agregar_cola.append(contador)
+    fin = time.perf_counter()
+    tiempos_agregar_cola.append(fin - inicio)
 
     # Medir tiempo para agregar Cola_list
-    contador = 0
-    for _ in range(n):
-        inicio = time.perf_counter()
+    inicio = time.perf_counter()
+    for _ in range(n):        
         dato = randint(1, 100)
         cola_list.agregar(dato)
-        fin = time.perf_counter()
-        contador += (fin - inicio)
-    tiempos_agregar_cola_list.append(contador)
+    fin = time.perf_counter()
+    tiempos_agregar_cola_list.append(fin - inicio)
+
+plt.figure(figsize=(10, 6))
 
 plt.plot(tamanos, tiempos_agregar_cola, marker='o', label="agregar cola - O(1)")
 plt.plot(tamanos, tiempos_agregar_cola_list, marker='o', label="agregar cola_list - O(n)")
