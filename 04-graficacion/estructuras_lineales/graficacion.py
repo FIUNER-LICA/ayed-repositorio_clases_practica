@@ -1,4 +1,4 @@
-from matplotlib import pyplot as plt
+from matplotlib import pyplot as plt #pip install matplotlib
 from random import randint
 import time
 from modules.cola import Cola
@@ -23,7 +23,7 @@ for n in tamanos:
         inicio = time.perf_counter()
         cola.eliminar()
         fin = time.perf_counter()
-        contador += (fin - inicio)
+        contador += (fin - inicio)/n
     tiempos_eliminar_cola.append(contador)
 
     contador = 0
@@ -31,7 +31,7 @@ for n in tamanos:
         inicio = time.perf_counter()
         cola_list.avanzar()
         fin = time.perf_counter()
-        contador += (fin - inicio)
+        contador += (fin - inicio)/n
     tiempos_eliminar_cola_list.append(contador)
 
 # Gráfico para inserción
