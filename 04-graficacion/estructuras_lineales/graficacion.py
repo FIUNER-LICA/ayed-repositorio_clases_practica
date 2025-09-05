@@ -23,7 +23,7 @@ for n in tamanos:
         inicio = time.perf_counter()
         cola.eliminar()
         fin = time.perf_counter()
-        contador += (fin - inicio)/n
+        contador += (fin - inicio) / n
     tiempos_eliminar_cola.append(contador)
 
     contador = 0
@@ -31,7 +31,7 @@ for n in tamanos:
         inicio = time.perf_counter()
         cola_list.avanzar()
         fin = time.perf_counter()
-        contador += (fin - inicio)/n
+        contador += (fin - inicio) / n
     tiempos_eliminar_cola_list.append(contador)
 
 # Gráfico para inserción
