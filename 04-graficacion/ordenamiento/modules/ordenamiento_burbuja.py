@@ -33,17 +33,22 @@ def ordenamiento_burbuja_corto(lista):
 
 if __name__ == '__main__':
     # ordena numeros y palabras
-    M, N = 500, 8000
-    datos = [randint(-M, M) for i in range(N)]
-    palabras = ["empanada", "arepa", "asado", "pizza", "ravioles", "tacos", "sushi", "hamburguesa", "pancho", "papas fritas", "milanesa", "choripan", "huevo frito"]
-    
-    datos_ordenados = sorted(datos)
-    palabras_ordenadas = sorted(palabras)
-    datos = ordenamiento_burbuja(datos)
-    palabras = ordenamiento_burbuja(palabras)
 
-    assert datos == datos_ordenados
-    assert palabras == palabras_ordenadas
+    numeros = [5, 3, 8, 6, 7, 2]
+    numeros = ordenamiento_burbuja(numeros)
+    print(numeros)
+
+    # palabras = ["empanada", "arepa", "asado", "pizza", "ravioles", "tacos", "sushi", "hamburguesa", "pancho", "papas fritas", "milanesa", "choripan", "huevo frito"]
+    # palabras = ordenamiento_burbuja(palabras)
+    # print(palabras)
+
+    # M, N = 5000, 8000
+    # datos = [randint(-M, M) for i in range(N)]
+    # # datos = []
+    # # for _ in range(N):
+    # #     datos.append(randint(-M, M)) 
+    # datos = ordenamiento_burbuja(datos)
+    # print(datos)
 
 
 

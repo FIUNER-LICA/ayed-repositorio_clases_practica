@@ -4,7 +4,7 @@ import time
 from modules.ordenamiento_por_seleccion import ordenamiento_por_seleccion
 
 tamanos = [1, 10, 100, 200, 500, 700, 1000]
-tamanos = range(1,1000,10)
+# tamanos = range(1,1000,10)
 
 tiempos_ordenamiento_por_seleccion = []
 

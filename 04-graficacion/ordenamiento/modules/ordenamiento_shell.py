@@ -48,14 +48,15 @@ def brecha(una_lista, inicio, brecha):
 
 if __name__ == '__main__':
     # ordena numeros y palabras
-    M, N = 500, 8000
-    datos = [randint(-M, M) for i in range(N)]
-    palabras = ["empanada", "arepa", "asado", "pizza", "ravioles", "tacos", "sushi", "hamburguesa", "pancho", "papas fritas", "milanesa", "choripan", "huevo frito"]
-    
-    datos_ordenados = sorted(datos)
-    palabras_ordenadas = sorted(palabras)
-    datos = ordenamiento_shell(datos)
-    palabras = ordenamiento_shell(palabras)
+    numeros = [5, 3, 8, 6, 7, 2]
+    numeros = ordenamiento_shell(numeros)
+    print(numeros)
 
-    assert datos == datos_ordenados
-    assert palabras == palabras_ordenadas
+    # palabras = ["empanada", "arepa", "asado", "pizza", "ravioles", "tacos", "sushi", "hamburguesa", "pancho", "papas fritas", "milanesa", "choripan", "huevo frito"]
+    # palabras = ordenamiento_shell(palabras)
+    # print(palabras)
+
+    # M, N = 500, 800
+    # datos = [randint(-M, M) for i in range(N)]
+    # datos = ordenamiento_shell(datos)
+    # print(datos)

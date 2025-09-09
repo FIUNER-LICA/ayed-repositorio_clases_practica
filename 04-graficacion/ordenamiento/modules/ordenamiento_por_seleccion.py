@@ -17,31 +17,20 @@ def ordenamiento_por_seleccion(una_lista):
 
 
 if __name__ == '__main__':
-    mi_lista = [5, 3, 8, 6, 2, 7, 4, 1] 
-    # print(ordenamiento_por_seleccion(mi_lista))
+    numeros = [5, 3, 8, 6, 2, 7, 4, 1] 
+    print(ordenamiento_por_seleccion(numeros))
 
-    M, N = 5000, 8000    
-    datos = [randint(-M, M) for _ in range(N)]
+    # palabras = ["empanada", "arepa", "asado", "pizza", "ravioles", "tacos", "sushi", "hamburguesa", "pancho", "papas fritas", "milanesa", "choripan", "huevo frito"]
+    # palabras = ordenamiento_por_seleccion(palabras)
+    # print(palabras)
+
+    # M, N = 5000, 8000    
+    # datos = [randint(-M, M) for _ in range(N)]
     # # datos = []
     # # for _ in range(N):
-    # #     datos.append(randint(-M, M))    
-
-    datos_sel = ordenamiento_por_seleccion(datos.copy())
+    # #     datos.append(randint(-M, M)) 
+    # datos = ordenamiento_por_seleccion(datos)
     # print(datos)
 
-    datos_sorted = sorted(datos)
-
-    # if datos_sel == datos_sorted:
-    #     print("La lista está ordenada")
-    # else:
-    #     print("La lista no está ordenada")
-
-
-
-    # # Medicion de tiempo
-    inicio = time.time()
-    ordenamiento_por_seleccion(datos.copy())
-    fin = time.time()
-    print(f"Tiempo de ejecución: {fin - inicio:.6f} segundos")
 
 
