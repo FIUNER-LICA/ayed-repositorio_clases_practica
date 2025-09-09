@@ -19,7 +19,7 @@ for n in tamanos:
     #     datos.append(randint(1, 10000))    
 
     inicio = time.perf_counter()
-    ordenamiento_por_seleccion(datos.copy())
+    ordenamiento_por_seleccion(datos.copy()) # ¿Por qué .copy()?
     fin = time.perf_counter()
     
     tiempos_ordenamiento_por_seleccion.append(fin - inicio)        
